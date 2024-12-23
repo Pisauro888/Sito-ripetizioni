@@ -61,7 +61,7 @@ body {
 }
 
 .accordion-title {
-    background-color: #4285F4;
+    background-color: #42904d;
     color: white;
     padding: 15px;
     margin: 10px 0;
@@ -76,7 +76,7 @@ body {
 }
 
 .accordion-title:hover {
-    background-color: #357ae8;
+    background-color: #42904d;
 }
 
 .accordion-title span {
@@ -152,7 +152,7 @@ body {
         }
 
         .contact-button {
-            background-color: #4285F4;
+            background-color: #42904d;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
@@ -223,7 +223,7 @@ body {
         }
 
         .form-group button {
-            background-color: #4285F4;
+            background-color: #42904d;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -234,7 +234,7 @@ body {
         }
 
         .form-group button:hover {
-            background-color: #357ae8;
+            background-color: #327b3c;
         }
 
         @media (max-width: 768px) {
