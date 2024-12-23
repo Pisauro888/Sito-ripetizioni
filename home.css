@@ -1,54 +1,52 @@
-/* Stile generale */
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
 
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-    }
-}
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+        }
 
-/* Pannello sinistro */
-.left-panel {
-    flex: 1;
-    background-color: #f4f4f4;
-    padding: 20px;
-    position: relative;
-    text-align: center;
-}
+        .left-panel {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+        }
 
-.left-panel img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-}
+        .left-panel img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
 
-.left-panel::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://via.placeholder.com/500x500.png?text=Operazioni');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.1;
-    z-index: -1;
-}
+        .left-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/500x500.png?text=Operazioni'); /* Placeholder image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.1;
+            z-index: -1;
+        }
 
-/* Pannello destro */
+        /* Aggiornamento dinamico della parte destra */
 .right-panel {
     flex: 1;
     background: linear-gradient(135deg, #ffffff, #f9f9f9);
@@ -78,7 +76,7 @@ body {
 }
 
 .accordion-title:hover {
-    background-color: #327b3c;
+    background-color: #42904d;
 }
 
 .accordion-title span {
@@ -109,7 +107,7 @@ body {
     padding: 15px;
 }
 
-/* Animazioni */
+/* Animazione dinamica */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -121,120 +119,135 @@ body {
     }
 }
 
-/* Divider */
-.divider {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .divider {
-        display: block;
-        width: 1px;
-        background-color: #ccc;
-    }
-}
-
-/* Stile del pulsante di contatto */
-.contact-button {
-    background-color: #42904d;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
-    display: inline-block;
-    transition: all 0.3s;
-}
-
-.contact-button:active {
-    transform: scale(1.1);
-}
-
-/* Popup */
-.calendar-form {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
-}
-
-.calendar-form.active {
-    display: block;
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.overlay.active {
-    display: block;
-}
-
-/* Modulo */
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.form-group button {
-    background-color: #42904d;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 100%;
-}
-
-.form-group button:hover {
-    background-color: #327b3c;
-}
-
-/* Adattamenti per dispositivi mobili */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    .accordion-title {
+        font-size: 16px;
     }
 
-    .left-panel {
-        height: 50vh;
-    }
-
-    .right-panel {
-        height: 50vh;
-        overflow-y: auto;
+    .accordion-content {
+        font-size: 14px;
     }
 }
+
+        .divider {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .divider {
+                display: block;
+                width: 1px;
+                background-color: #ccc;
+            }
+        }
+
+        h1, h2 {
+            margin: 0 0 20px 0;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .contact-button {
+            background-color: #42904d;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .contact-button:active {
+            transform: scale(1.1);
+        }
+
+        .popup, .calendar-form {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .popup.active, .calendar-form.active {
+            display: block;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #42904d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .form-group button:hover {
+            background-color: #327b3c;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left-panel {
+                height: 50vh;
+            }
+
+            .right-panel {
+                height: 50vh;
+                overflow-y: auto;
+            }
+        }
