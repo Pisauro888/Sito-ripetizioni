@@ -1,51 +1,18 @@
 <!DOCTYPE html>
 <html lang="it">
-    <link rel="stylesheet" href="ripetizioni/home.css">
-    <script src="ripetizioni/home.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ripetizioni di Matematica e Fisica</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-        /* Nascondi il popup di default */
-        .calendar-form {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 400px;
-        }
-
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-        }
-
-        .overlay.active, .calendar-form.active {
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <div class="left-panel">
-            <img src="https://via.placeholder.com/150" alt="Foto profilo">
+            <img src=img/N.mp4 alt="Foto profilo">
             <h1>Ripetizioni di Matematica e Fisica</h1>
             <p>Da questo sito potrai contattarmi, scopri di più su di me cliccando sui titoli.</p>
             <a href="#" class="contact-button" onclick="showCalendarForm()">Contattaci</a>
@@ -75,20 +42,17 @@
         </div>
     </div>
 
-    <div class="overlay" id="overlay" onclick="closeCalendarForm()"></div>
+    <div class="overlay" id="overlay"></div>
 
     <div class="calendar-form" id="calendarForm">
-        <button type="button" style="position: absolute; top: 10px; right: 10px;" onclick="closeCalendarForm()">×</button>
-        <form action="https://formspree.io/f/mpwwzkrv" method="POST">
-            <input type="hidden" name="_subject" value="Richiesta di ripetizioni">
-            <input type="hidden" name="_next" value="https://pisauro888.github.io/Sito-ripetizioni/#">
+        <form onsubmit="submitForm(event)">
             <div class="form-group">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="_replyto" required>
+                <label for="email">Email o Numero di Telefono:</label>
+                <input type="text" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="date">Data:</label>
@@ -104,16 +68,5 @@
         </form>
     </div>
 
-    <script>
-        function showCalendarForm() {
-            document.getElementById('calendarForm').classList.add('active');
-            document.getElementById('overlay').classList.add('active');
-        }
 
-        function closeCalendarForm() {
-            document.getElementById('calendarForm').classList.remove('active');
-            document.getElementById('overlay').classList.remove('active');
-        }
-    </script>
-</body>
 </html>
