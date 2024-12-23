@@ -60,6 +60,37 @@ function submitForm(event) {
         return;
     }
 
+    // Configura i dati da inviare
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("_replyto", email);
+    formData.append("date", date);
+    formData.append("note", note);
+    formData.append("_subject", "Nuova richiesta di ripetizioni");
+
+    // Invia i dati a Formspree
+    fetch("https://formspree.io/f/xyzabc", {
+        method: "POST",
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            alert("Richiesta inviata con successo!");
+            closeCalendarForm();
+            document.getElementById('calendarForm').reset();
+        } else {
+            alert("Errore nell'invio. Riprova più tardi.");
+        }
+    })
+    .catch(error => {
+        console.error("Errore:", error);
+        alert("Errore di connessione. Controlla la tua rete.");
+    });
+}
+
     const requestBody = {
         name,
         email,
