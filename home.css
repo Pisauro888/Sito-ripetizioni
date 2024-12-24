@@ -11,7 +11,7 @@ body {
             background-image: url('img/backround.png');
         }
 #logo-container {
-    height: 50%; /* Altezza desiderata */
+    height: 10%; /* Altezza desiderata */
     width: 100%; /* Larghezza completa */
     overflow: hidden; /* Nasconde l'eventuale parte eccedente del contenuto */
     display: flex;
