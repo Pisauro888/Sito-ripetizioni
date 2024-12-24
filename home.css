@@ -10,14 +10,7 @@ body {
             height: 100vh;
             background-image: url('img/backround.png');
         }
-#logo-container {
-    height: 10%; /* Altezza desiderata */
-    width: 100%; /* Larghezza completa */
-    overflow: hidden; /* Nasconde l'eventuale parte eccedente del contenuto */
-    display: flex;
-    justify-content: center; /* Centra orizzontalmente il video */
-    align-items: center; /* Centra verticalmente il video */
-}
+
 
 
 @media (max-width: 768px) {
