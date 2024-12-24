@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div url('img/backround.png') class="left-panel">
-            <video src=img/N.mp4 alt="Foto profilo">
+            <video src=img/N.mp4 alt="Foto profilo" autoplay muted loop preload ></video>
             <h1>Ripetizioni di Matematica e Fisica</h1>
             <p>Da questo sito potrai <b>contattarmi e scoprire di più su me</b> e i miei servizi.</p>
             <a href="#" class="contact-button" onclick="showCalendarForm()">Contattami</a>
@@ -25,7 +25,8 @@
                 </div>
                 <div class="accordion-content">
                     <p>Studente del liceo <b>Enrico Fermi</b>, con interessi relativi alle materie scientifiche ed immatricolato per le facoltà di <b>ingegneria al Politecnico di Milano</b>.</p>
-                    <img src='img/apprendimento.mp4' style="width: 100%; height: auto;>
+                    <video id="logo-video" autoplay muted loop preload="auto">
+    <source src="img/apprendimento.mp4" style="width: 100%; height: auto; type="video/mp4"></video>
                 </div>
                         <div class="divider"></div>
                 <div class="accordion-title" onclick="toggleAccordion(this)"> 
