@@ -256,38 +256,48 @@ body {
                 overflow-y: auto;
             }
         }
+/* Sezione Finale */
 #final-section {
     background: linear-gradient(135deg, #ff7eb3, #ff758c);
     color: #fff;
     text-align: center;
-    padding: 50px 20px; /* Spaziatura interna */
-    margin-top: 30px; /* Spazio prima della sezione */
-    border-radius: 10px; /* Angoli arrotondati */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Effetto ombra */
+    padding: 50px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Contenitore per il testo */
+/* Contenitore del testo */
 #final-section .content-wrapper {
-    max-width: 800px; /* Larghezza massima */
-    margin: 0 auto; /* Centra il contenuto */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Stile per il titolo */
 #final-section h2 {
-    font-size: 2rem; /* Dimensione del testo */
-    margin-bottom: 10px; /* Spazio sotto il titolo */
+    font-size: 2rem;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
 /* Stile per il paragrafo */
 #final-section p {
-    font-size: 1.2rem; /* Dimensione del testo */
-    margin-bottom: 20px; /* Spazio sotto il paragrafo */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
     line-height: 1.6;
 }
 
-/* Stile per il pulsante */
-#final-section .cta-button {
+/* Contenitore pulsanti */
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Spaziatura tra i pulsanti */
+    margin-bottom: 20px;
+}
+
+/* Stile per il pulsante Contattaci */
+.cta-button {
     display: inline-block;
     background-color: #fff;
     color: #ff758c;
@@ -298,7 +308,41 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-#final-section .cta-button:hover {
+.cta-button:hover {
     background-color: #ff758c;
     color: #fff;
+}
+
+/* Icona Instagram */
+.instagram-link {
+    display: inline-block;
+}
+
+.instagram-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.instagram-link:hover .instagram-icon {
+    transform: scale(1.2);
+}
+
+/* Linea animata */
+.animated-line {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+    animation: expand-line 2s infinite ease-in-out;
+}
+
+/* Animazione linea */
+@keyframes expand-line {
+    0%, 100% {
+        width: 50px;
+    }
+    50% {
+        width: calc(100% - 60px); /* Si allunga fino ai lati */
+    }
 }
