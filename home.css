@@ -255,3 +255,49 @@ body {
                 overflow-y: auto;
             }
         }
+#final-section {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px; /* Spaziatura interna */
+    margin-top: 30px; /* Spazio prima della sezione */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Effetto ombra */
+}
+
+/* Contenitore per il testo */
+#final-section .content-wrapper {
+    max-width: 800px; /* Larghezza massima */
+    margin: 0 auto; /* Centra il contenuto */
+}
+
+/* Stile per il titolo */
+#final-section h2 {
+    font-size: 2rem; /* Dimensione del testo */
+    margin-bottom: 10px; /* Spazio sotto il titolo */
+    font-weight: bold;
+}
+
+/* Stile per il paragrafo */
+#final-section p {
+    font-size: 1.2rem; /* Dimensione del testo */
+    margin-bottom: 20px; /* Spazio sotto il paragrafo */
+    line-height: 1.6;
+}
+
+/* Stile per il pulsante */
+#final-section .cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #ff758c;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#final-section .cta-button:hover {
+    background-color: #ff758c;
+    color: #fff;
+}
