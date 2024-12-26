@@ -15,7 +15,7 @@ body {
 }
 
 .separator {
-    height: 2px;
+    height: 5px;
     background-color: #4ade80; /* Verde acqua */
     width: 0; /* Linea inizialmente nascosta */
     margin: 20px 0;
