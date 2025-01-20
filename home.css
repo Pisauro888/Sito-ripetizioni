@@ -13,7 +13,7 @@ body {
         }
 
 .separator {
-    height: 10px;
+    height: 2px;
     background-color: #000;
     width: 0; /* Linea inizialmente nascosta */
     margin: 20px 0;
