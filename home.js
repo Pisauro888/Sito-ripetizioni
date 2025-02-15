@@ -132,3 +132,17 @@ function submitForm(event) {
     // Resetta il modulo
     document.getElementById('calendarForm').reset();
 }
+
+
+// prova carte
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".flip-card");
+
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            card.classList.toggle("flipped");
+        });
+    });
+});
+
