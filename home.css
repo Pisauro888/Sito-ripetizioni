@@ -9,7 +9,7 @@ body {
             flex-direction: column;
             overflow: visible; /* Permette lo scroll continuo */
             height: auto;
-            background-image: url('img/backround.png');
+            background-video: url('img/Backround ciccio spiegazione.mp4');
         }
 
 .separator {
