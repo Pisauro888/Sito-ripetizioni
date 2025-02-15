@@ -162,9 +162,18 @@ body {
         }
 
         h1, h2 {
+            font-family: "Montserrat"
+            font-size: 5em;
             margin: 0 0 20px 0;
             color: #333;
         }
+
+.box {
+    background: url(img/Backround ciccio spiegazione.mp4);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
         p {
             color: #555;
