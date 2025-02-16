@@ -160,6 +160,12 @@ h1, h2 {
     color: #333;
 }
 
+.box {
+background: url(img/Backround ciccio spiegazione.mp4);
+width: 100%;
+display: flex;
+justify-content: center;
+}
 
 p {
     color: #555;
@@ -360,35 +366,3 @@ width: calc(100% - 60px); /* Si allunga fino ai lati */
 
 
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #121212;
-    overflow: hidden;
-}
-.text-container {
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    text-align: center;
-    position: relative;
-    color: #555;
-    line-height: 1.6;
-}
-@keyframes expandText {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100vw;
-    }
-}
-.animate {
-    animation: expandText 2.5s ease-out forwards;
-}
