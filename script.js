@@ -1,4 +1,4 @@
- function toggleAccordion(element) {
+function toggleAccordion(element) {
     const content = element.nextElementSibling;
     const isOpen = element.classList.contains('open');
 
@@ -147,6 +147,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-window.onload = function() {
-    document.getElementById("animatedText").classList.add("animate");
-};
