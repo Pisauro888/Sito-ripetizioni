@@ -146,3 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+window.onload = function() {
+    document.getElementById("animatedText").classList.add("animate");
+};
