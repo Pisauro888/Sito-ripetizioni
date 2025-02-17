@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom , #496750, #91b88c, #f1fff1);
+    background: linear-gradient(to bottom , #496750, #f1fff1, #91b88c, #f1fff1);
     overflow-x: hidden;
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
 }
@@ -404,6 +404,6 @@ table {
         }
 
         tr:hover {
-            background: linear-gradient(to bottom , #496750, #91b88c, #f1fff1);
+           background: linear-gradient(to left , #496750, #f1fff1);
         }
     
