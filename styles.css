@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #97ac97, #ffffff, #89a489);
+    overflow-x: hidden;
 }
 
 .separator {
@@ -369,4 +370,9 @@ img {
   display: block; /* Evita spazi vuoti sotto l'immagine */
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Evita spazi vuoti sotto l'immagine */
+}
 
