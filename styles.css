@@ -407,3 +407,8 @@ table {
             background: #f1f3f5;
         }
     
+.curved-text {
+            display: inline-block;
+            transform: rotate(-20deg);  /* Ruota il testo per creare un effetto di curvatura */
+            font-size: 30px;
+        }
