@@ -404,6 +404,6 @@ table {
         }
 
         tr:hover {
-            background: #f1f3f5;
+            background: linear-gradient(to bottom , #496750, #91b88c, #f1fff1);
         }
     
