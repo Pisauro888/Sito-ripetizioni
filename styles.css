@@ -39,7 +39,7 @@ display: none;
 
 .left-panel img {
     width: 150px;
-    height: 150px;
+    height: 50px;
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
