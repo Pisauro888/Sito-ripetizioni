@@ -363,6 +363,10 @@ width: calc(100% - 60px); /* Si allunga fino ai lati */
 }
 }
 
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Evita spazi vuoti sotto l'immagine */
+}
 
 
