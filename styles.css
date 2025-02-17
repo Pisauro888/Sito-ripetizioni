@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom , #97ac97, #ffffff, #89a489);
+    background: linear-gradient(to bottom , #000000, #82a27e, #f1fff1);
     overflow-x: hidden;
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
 }
