@@ -32,8 +32,8 @@ display: none;
     flex: 1;
     background-color: #f4f4f4;
     padding: 20px;
-    position: relative;
     text-align: center;
+    background-attachment: fixed;
 }
 
 .left-panel img {
