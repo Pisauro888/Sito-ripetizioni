@@ -394,7 +394,7 @@ table {
         }
 
         th {
-            background: #007bff;
+            background: linear-gradient(to left, #496750, #91b88c);
             color: white;
             font-size: 18px;
         }
@@ -404,6 +404,6 @@ table {
         }
 
         tr:hover {
-           background: linear-gradient(to left , #496750, #f1fff1);
+            background: #f1f3f5;
         }
     
