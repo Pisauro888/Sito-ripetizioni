@@ -410,7 +410,7 @@ table {
             background: #f1f3f5;
         }
     
-.table.tableimg img {
+.table1 {
             width: 80%;
             border-collapse: collapse;
             background: white;
@@ -418,14 +418,14 @@ table {
             border-radius: 10px;
             overflow: hidden;
         }
-        .table.tableimg img td {
+        .td1 {
             padding: 20px;
             text-align: center;
             vertical-align: middle;
             font-size: 18px;
             color: #333;
         }
-        .tableimg img {
+        .img1 {
             width: 100px;
             height: auto;
             border-radius: 10px;
