@@ -353,9 +353,9 @@ transform: scale(1.2);
 .animated-line {
 width: 50px;
 height: 3px;
-background-color: #fff;
+background-color: #000;
 margin: 0 auto;
-animation: expand-line 2s infinite ease-in-out;
+animation: expand-line 3s infinite ease-in-out;
 }
 
 /* Animazione linea */
