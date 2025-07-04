@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marco Rossi - Ripetizioni di Matematica e Fisica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background-color: #10b981;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: white;
+      color: #10b981;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    section.hero {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.6s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .carousel-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      font-size: 0.9rem;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    .carousel-controls button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+
+    .carousel-controls .prev {
+      left: 10px;
+    }
+
+    .carousel-controls .next {
+      right: 10px;
+    }
+
+    .carousel-controls button:hover {
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    section.services {
+      padding: 2rem 1rem;
+      background-color: white;
+    }
+
+    .service-card {
+      background-color: #ecfdf5;
+      border: 1px solid #d1fae5;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .service-card h3 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    section.contact {
+      padding: 2rem 1rem;
+      background-color: #f0fdf4;
+      text-align: center;
+    }
+
+    .contact-icons a {
+      display: inline-block;
+      margin: 0 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icons img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      padding: 1rem;
+      background-color: #d1fae5;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #1f2937;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">L</div>
+    <h1>Marco Rossi</h1>
+  </header>
+
+  <!-- Hero Section with Carousel -->
+  <section class="hero">
+    <h2>Chi Sono</h2>
+    <div class="carousel" id="carousel">
+      <div class="carousel-inner">
+        <img src=" https://placehold.co/600x400?text=Insegnante+di+Matematica" alt="Slide 1" class="active" />
+        <img src=" https://placehold.co/600x400?text=Lezione+Individuale" alt="Slide 2" />
+        <img src=" https://placehold.co/600x400?text=Fisica+Semplificata" alt="Slide 3" />
+        <div class="carousel-text" id="carouselText"></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2 class="text-center text-xl font-semibold mb-6">Servizi di Ripetizione</h2>
+    <div class="service-card">
+      <h3>Lezioni Personalizzate</h3>
+      <p>Adattiamo il piano didattico alle tue esigenze specifiche per colmare lacune o migliorare le tue competenze.</p>
+    </div>
+    <div class="service-card">
+      <h3>Supporto Continuo</h3>
+      <p>Ricevi assistenza costante durante tutto l'anno scolastico, con revisione dei compiti e preparazione ai test.</p>
+    </div>
+    <div class="service-card">
+      <h3>Metodo Pratico</h3>
+      <p>Approccio basato su esercizi pratici e risoluzione di problemi reali per una migliore comprensione.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2 class="text-xl font-semibold mb-4">Contattami</h2>
+    <p class="mb-6">Prenota una lezione gratuita tramite i seguenti canali:</p>
+    <div class="contact-icons">
+      <a href=" https://instagram.com " target="_blank">
+        <img src="https://placehold.co/100x100?text=Instagram" alt="Instagram" />
+      </a>
+      <a href=" https://wa.me/123456789 " target="_blank">
+        <img src="https://placehold.co/100x100?text=WhatsApp" alt="WhatsApp" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Marco Rossi | Tutti i diritti riservati
+  </footer>
+
+  <!-- JavaScript per il carosello -->
+  <script>
+    const carouselImages = [
+      { src: " https://placehold.co/600x400?text=Insegnante+di+Matematica", text: "Sono un insegnante appassionato con anni di esperienza nell'insegnamento della matematica." },
+      { src: " https://placehold.co/600x400?text=Lezione+Individuale", text: "Offro ripetizioni personalizzate per aiutare gli studenti a raggiungere i loro obiettivi scolastici." },
+      { src: " https://placehold.co/600x400?text=Fisica+Semplificata", text: "La fisica non è mai stata così semplice grazie a spiegazioni chiare e pratiche." }
+    ];
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const inner = document.querySelector('.carousel-inner');
+      const images = inner.querySelectorAll('img');
+      const textElement = document.getElementById('carouselText');
+
+      images.forEach((img, index) => {
+        img.classList.toggle('active', index === currentIndex);
+      });
+
+      textElement.textContent = carouselImages[currentIndex].text;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % carouselImages.length;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
+      updateCarousel();
+    }
+
+    // Inizializza testo e immagine iniziale
+    document.addEventListener('DOMContentLoaded', () => {
+      updateCarousel();
+    });
+  </script>
+
+</body>
+</html>
